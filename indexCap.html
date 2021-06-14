@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Save For Later</title>
+        <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+        </script><!-- Link jQuery -->
+        <link href="index.css" rel= "stylesheet"><!--links to the css document-->
+
+        
+
+        
+    
+        <!-- Link Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        
+
+        <div id = "div1" class = "article"><!--article container-->
+            <h2 id = "test" class = "article1" >Kiwi Fruit</h2>
+            <p class = "article1">
+                One of the most underrated fruits of all time. This hairy sphere has a bautiful green flesh inside with a white center. Not only
+                are kiwi fruits incredibly delicious. They are one of healthiest fruits in the world. A fruit that is actually deserving of its title 
+                as a superfood. Don't believe me? Well let me show you.
+            </p>
+            <p class = "article1">
+                Kiwi fruit are loaded with all sorts of essential vitamins and minerals. To name a few ,Vitamins A, B6, B12, E,
+                and potassium, calcium, iron and magnesium are all found found in kiwis, and in significant amounts. Did you know that kiwis
+                actually have more vitamin C than oranges! Kiwi fruit are also a great source of fibre which aids in digestion. There
+                are also certain antoxidants and enzymes that aid better sleep and improved digestion. Among all of these amazing health benefits,
+                they also taste really great.
+            </p>
+            <button type = "save" class = "theButtArt"> Click to save</button>
+            
+            <button type = "like" class = "likeButt">Like</button>   
+        </div>
+        <div class = "article"><!--article container-->
+            <h2>BlueBerries</h2>
+            <p>Blueberries are an extremely healthy and tasty berry. They are packed with al sorts of vitamins, minerals and antioxidants</p>
+            <p>
+                Blueberries have been found to reduce inflammation as well as oxidative stress. This is very important as both of those can be
+                the cause of a wide range of diseases. BlueBerries can also lower cholesterol levels, promoting better heart health. BlueBerries are also
+                high in fibre and improve insulin sensitivity.
+            </p>
+
+            <button type = "save" class = "theButtArt"> Click to save</button>
+            
+            <button  type = "like" class = "likeButt">Like</button>
+            
+        </div>
+        <div class = "recipe"><!--recipe container-->
+            <h2>Mexican Mince</h2>
+            <p>This is a very tasty and versatile mince that can be eaten in a taco,burrito, torta or even by itself. It is a very easy
+                recipe for those who are that confident in cooking. It is also great with sour cream! Serves 4.
+            </p>
+            <ol>
+                <li>Brown a whole onion(diced) in a pot</li>
+                <li>Add 500g mince and cook til brown</li>
+                <li>Add a taco spice mix</li>
+                <li>Add a cup of chopped tomatoes</li>
+                <li>Add a cup of red beans</li>
+                <li>Enjoy!</li>
+            </ol>
+            <button type = "save" class = "theButtRecipe"> Click to save</button>
+            
+                <button type = "like" class = "likeButt">Like</button>
+            
+        </div>
+        <div class = "recipe"><!-- recipe container-->
+            <h2>Chorizo dish</h2>
+            <p>This a very delicious soup/stew with a great deal of flavour. It does take a while to make but boy is it worth it.
+                It is a great dish to cook in bulk and save some for later, however with this meal leftovers are no guarantee!
+            </p>
+            <ol>
+                <li>Brown a whole onion(diced) in a pot</li>
+                <li>Add 3 cut potatoes and carrots</li>
+                <li>Add chopped chorizo and bacon pieces</li>
+                <li>Add lentils and beans</li>
+                <li>Add spice</li>
+                <li>Cook for an hour</li>
+            </ol>
+            <button type = "save" class = "theButtRecipe"> Click to save</button>
+            
+                <button type = "like" class = "likeButt">Like</button>
+            
+        </div>
+
+        <div class = "container"><!--hide and show buttons-->
+            <button type ="submit" id = "hide">Hide images</button>
+            <button type ="submit" id = "show">Show images</button>
+        </div>
+        <div class = "image"><!--image container-->
+            <img class = "move" id = "kiwiPic" src ="kiwi.jfif">
+            <br>
+            <button type = "save" class = "theButtImage"> Click to save</button>
+            
+                <button type = "like" class = "likeButt">Like</button>
+           
+
+        </div>
+        <div class = "image"><!--image container-->
+            <img class = "move" src = "tacoMince.jfif">
+            <br>
+            <button type = "save" class = "theButtImage"> Click to save</button>
+            
+            
+                <button type = "like" class = "likeButt">Like</button>
+        
+        </div>
+        
+        <div class = "image"><!--image container-->
+            <img class = "move" src = "chorizo.jpg">
+            <br>
+            <button type = "save" class = "theButtImage"> Click to save</button>
+            
+            <button type = "like" class = "likeButt">Like</button>
+            
+            
+        </div>
+        
+
+        <div id = "commentSection">
+
+        </div>
+        
+        <div class="container">
+        <form ><!--comment form-->
+            <h3>Leave a comment</h3>
+            <label for="fname">Full name:</label>
+            <input id = "name" type= "text" name="name">
+            <label for="comment"> comment:</label>
+            <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea>
+            <button type ="submit" onclick = leaveComment() id = "butComm">Submit</button>
+        </form>
+        </div>
+
+        <div class="container"> <!--contact form-->
+            <form>
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+              <label for="country">Country</label>
+                <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">New Zealand</option>
+                <option value="usa">Namibia</option>
+                <option value="usa">South Africa</option>
+                </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <button type ="submit" onclick = leaveDetails() id = "butComm">Submit</button>
+          
+            </form>
+          </div>
+          <div id = "allComments" class = "container">
+              <h2>Comments</h2>
+
+          </div>
+
+
+
+        <script src="mainCap.js"></script>
+    </body>
